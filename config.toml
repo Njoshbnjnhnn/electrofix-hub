@@ -1,0 +1,5 @@
+sender_email = "sn630188@gmail.com"
+sender_password = "your-16-char-app-password"
+receiver_email = "sn630188@gmail.com"
+whatsapp_number = "254769871712"
+port = 5002

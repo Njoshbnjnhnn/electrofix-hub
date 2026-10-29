@@ -1,0 +1,98 @@
+2026-10-29 12:03:37,208 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:03:37,208 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:03:37,208 [INFO] Admin panel → http://127.0.0.1:5000/admin  (default password: electrofix2024)
+2026-10-29 12:06:46,933 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:06:46,934 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:06:46,934 [INFO] Admin panel → http://127.0.0.1:5000/admin  (default password: electrofix2024)
+2026-10-29 12:06:47,155 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.22.154:5001
+2026-10-29 12:06:47,155 [INFO] [33mPress CTRL+C to quit[0m
+2026-10-29 12:06:47,159 [INFO]  * Restarting with stat
+2026-10-29 12:06:47,501 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:06:47,501 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:06:47,501 [INFO] Admin panel → http://127.0.0.1:5000/admin  (default password: electrofix2024)
+2026-10-29 12:06:47,547 [WARNING]  * Debugger is active!
+2026-10-29 12:06:47,575 [INFO]  * Debugger PIN: 494-499-028
+2026-10-29 12:08:00,759 [INFO] 127.0.0.1 - - [29/Oct/2026 12:08:00] "GET / HTTP/1.1" 200 -
+2026-10-29 12:08:01,114 [INFO] 127.0.0.1 - - [29/Oct/2026 12:08:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-10-29 12:12:55,936 [INFO]  * Detected change in '/Users/app/IdeaProjects/Electrofix_hub Engineering/app.py', reloading
+2026-10-29 12:12:56,284 [INFO]  * Restarting with stat
+2026-10-29 12:12:56,441 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:12:56,441 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:12:56,442 [INFO] Admin panel → http://127.0.0.1:5001/admin  (default password: electrofix2024)
+2026-10-29 12:12:57,419 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:12:57,419 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:12:57,420 [INFO] Admin panel → http://127.0.0.1:5001/admin  (default password: electrofix2024)
+2026-10-29 12:12:57,476 [WARNING]  * Debugger is active!
+2026-10-29 12:12:57,508 [INFO]  * Debugger PIN: 494-499-028
+2026-10-29 12:13:33,543 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:13:33,543 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:13:33,543 [INFO] Admin panel → http://127.0.0.1:5000/admin  (default password: electrofix2024)
+2026-10-29 12:13:33,846 [INFO]  * Detected change in '/Users/app/IdeaProjects/Electrofix_hub Engineering/app.py', reloading
+2026-10-29 12:13:33,937 [INFO]  * Restarting with stat
+2026-10-29 12:13:34,300 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:13:34,300 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:13:34,301 [INFO] Admin panel → http://127.0.0.1:5000/admin  (default password: electrofix2024)
+2026-10-29 12:13:34,459 [WARNING]  * Debugger is active!
+2026-10-29 12:13:34,483 [INFO]  * Debugger PIN: 494-499-028
+2026-10-29 12:13:43,636 [INFO]  * Detected change in '/Users/app/IdeaProjects/Electrofix_hub Engineering/app.py', reloading
+2026-10-29 12:13:43,744 [INFO]  * Restarting with stat
+2026-10-29 12:13:44,149 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:13:44,149 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:13:44,149 [INFO] Admin panel → http://127.0.0.1:5001/admin  (default password: electrofix2024)
+2026-10-29 12:13:44,771 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:13:44,772 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:13:44,773 [INFO] Admin panel → http://127.0.0.1:5001/admin  (default password: electrofix2024)
+2026-10-29 12:13:44,863 [WARNING]  * Debugger is active!
+2026-10-29 12:13:44,902 [INFO]  * Debugger PIN: 494-499-028
+2026-10-29 12:13:57,043 [INFO]  * Detected change in '/Users/app/IdeaProjects/Electrofix_hub Engineering/app.py', reloading
+2026-10-29 12:13:57,171 [INFO]  * Restarting with stat
+2026-10-29 12:13:57,359 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:13:57,359 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:13:57,359 [INFO] Admin panel → http://127.0.0.1:5000/admin  (default password: electrofix2024)
+2026-10-29 12:13:57,697 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:13:57,697 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:13:57,698 [INFO] Admin panel → http://127.0.0.1:5000/admin  (default password: electrofix2024)
+2026-10-29 12:13:57,746 [WARNING]  * Debugger is active!
+2026-10-29 12:13:57,765 [INFO]  * Debugger PIN: 494-499-028
+2026-10-29 12:15:14,462 [INFO]  * Detected change in '/Users/app/IdeaProjects/Electrofix_hub Engineering/app.py', reloading
+2026-10-29 12:15:14,843 [INFO]  * Restarting with stat
+2026-10-29 12:15:16,040 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:15:16,041 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:15:16,042 [INFO] Admin panel → http://127.0.0.1:5000/admin  (default password: electrofix2024)
+2026-10-29 12:15:16,122 [WARNING]  * Debugger is active!
+2026-10-29 12:15:16,250 [INFO]  * Debugger PIN: 494-499-028
+2026-10-29 12:15:34,674 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:15:34,674 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:15:34,674 [INFO] Admin panel → http://127.0.0.1:5000/admin  (default password: electrofix2024)
+2026-10-29 12:15:34,884 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.22.154:5002
+2026-10-29 12:15:34,884 [INFO] [33mPress CTRL+C to quit[0m
+2026-10-29 12:15:34,892 [INFO]  * Restarting with stat
+2026-10-29 12:15:35,868 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:15:35,869 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:15:35,869 [INFO] Admin panel → http://127.0.0.1:5000/admin  (default password: electrofix2024)
+2026-10-29 12:15:35,933 [WARNING]  * Debugger is active!
+2026-10-29 12:15:35,954 [INFO]  * Debugger PIN: 494-499-028
+2026-10-29 12:28:16,100 [INFO] 127.0.0.1 - - [29/Oct/2026 12:28:16] "GET / HTTP/1.1" 200 -
+2026-10-29 12:28:16,194 [INFO] 127.0.0.1 - - [29/Oct/2026 12:28:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-10-29 12:30:26,670 [INFO] 127.0.0.1 - - [29/Oct/2026 12:30:26] "GET / HTTP/1.1" 200 -
+2026-10-29 12:58:44,129 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:58:44,129 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:58:44,129 [INFO] Admin panel → http://127.0.0.1:5000/admin  (default password: electrofix2024)
+2026-10-29 12:58:44,203 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.22.154:5002
+2026-10-29 12:58:44,203 [INFO] [33mPress CTRL+C to quit[0m
+2026-10-29 12:58:44,212 [INFO]  * Restarting with stat
+2026-10-29 12:58:44,709 [INFO] Database initialised at /Users/app/IdeaProjects/Electrofix_hub Engineering/electrofix.db
+2026-10-29 12:58:44,709 [INFO] Starting Electrofix Hub server…
+2026-10-29 12:58:44,709 [INFO] Admin panel → http://127.0.0.1:5000/admin  (default password: electrofix2024)
+2026-10-29 12:58:44,750 [WARNING]  * Debugger is active!
+2026-10-29 12:58:44,767 [INFO]  * Debugger PIN: 494-499-028
+2026-10-29 12:59:01,402 [INFO] 127.0.0.1 - - [29/Oct/2026 12:59:01] "GET / HTTP/1.1" 200 -

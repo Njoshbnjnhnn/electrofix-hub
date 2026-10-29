@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Electrofix Hub Nairobi – Phone Repair, FRP Bypass, Solar Systems, Electrical Wiring, AutoCAD, Electronics Brokerage, Web & App Development. Nairobi CBD Kenya."/>
+    <meta name="keywords" content="phone repair nairobi, frp bypass android kenya, solar installation nairobi, electrical wiring kenya, electronics broker nairobi cbd, autocad kenya, web developer nairobi"/>
+    <title>Electrofix Hub | Nairobi's #1 Electronics & Electrical Expert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;900&family=Share+Tech+Mono&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <style>
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        :root{
+          --bg:#06090f;
+          --deep:#090d15;
+          --panel:#0c1220;
+          --card:#0f1928;
+          --card2:#131f30;
+          --border:#1a2d45;
+          --border2:#223550;
+          --cyan:#00d4ff;
+          --green:#00ff88;
+          --orange:#ff7b00;
+          --red:#ff3b5c;
+          --text:#ddeeff;
+          --muted:#4d7a99;
+          --muted2:#7a9ab5;
+          --hd:'Exo 2',sans-serif;
+          --mono:'Share Tech Mono',monospace;
+          --body:'Nunito',sans-serif;
+        }
+        html{scroll-behavior:smooth}
+        body{background:var(--bg);color:var(--text);font-family:var(--body);overflow-x:hidden;font-size:15px;line-height:1.7}
+
+        /* GRID BG */
+        body::before{
+          content:'';position:fixed;inset:0;
+          background-image:linear-gradient(rgba(0,212,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,.03) 1px,transparent 1px);
+          background-size:40px 40px;
+          pointer-events:none;z-index:0;
+        }
+
+        /* NAV */
+        nav{
+          position:fixed;top:0;width:100%;
+          display:flex;align-items:center;justify-content:space-between;
+          padding:0 4vw;height:64px;
+          background:rgba(6,9,15,.92);
+          backdrop-filter:blur(18px);
+          border-bottom:1px solid var(--border);
+          z-index:200;
+        }
+        .logo{font-family:var(--hd);font-weight:900;font-size:1.1rem;letter-spacing:.08em;text-decoration:none;display:flex;align-items:center;gap:.4rem}
+        .logo .e{color:var(--cyan)}
+        .logo .f{color:var(--orange)}
+        .logo .tag{font-family:var(--mono);font-size:.58rem;color:var(--muted);background:rgba(0,212,255,.07);border:1px solid rgba(0,212,255,.15);padding:.15rem .4rem;border-radius:2px;letter-spacing:.1em}
+        .nav-links{display:flex;align-items:center;gap:1.6rem;list-style:none}
+        .nav-links a{color:var(--muted2);text-decoration:none;font-size:.82rem;font-weight:600;letter-spacing:.06em;transition:color .2s}
+        .nav-links a:hover{color:var(--cyan)}
+        .nav-wa{
+          display:flex;align-items:center;gap:.5rem;
+          background:linear-gradient(135deg,#25d366,#128c7e);
+          color:#fff;text-decoration:none;
+          font-weight:700;font-size:.78rem;letter-spacing:.06em;
+          padding:.5rem 1.1rem;border-radius:5px;
+          transition:opacity .2s;
+        }
+        .nav-wa:hover{opacity:.88}
+        .hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:.3rem}
+        .hamburger span{display:block;width:22px;height:2px;background:var(--cyan);transition:.3s}
+        .mob-menu{display:none;position:fixed;top:64px;left:0;right:0;background:var(--deep);border-bottom:1px solid var(--border);padding:1.5rem 4vw;z-index:190;flex-direction:column;gap:1rem}
+        .mob-menu.open{display:flex}
+        .mob-menu a{color:var(--text);text-decoration:none;font-weight:600;font-size:.95rem;padding:.5rem 0;border-bottom:1px solid var(--border)}
+
+        /* HERO */
+        .hero{
+          min-height:100vh;
+          display:flex;align-items:center;
+          padding:90px 4vw 60px;
+          position:relative;overflow:hidden;
+        }
+        .hero-glow{
+          position:absolute;left:-100px;top:50%;transform:translateY(-50%);
+          width:700px;height:700px;
+          background:radial-gradient(circle,rgba(0,212,255,.09) 0%,transparent 65%);
+          pointer-events:none;
+        }
+        .hero-glow2{
+          position:absolute;right:-200px;top:20%;
+          width:600px;height:600px;
+          background:radial-gradient(circle,rgba(255,123,0,.07) 0%,transparent 65%);
+          pointer-events:none;
+        }
+        .hero-inner{max-width:800px;position:relative;z-index:1}
+        .hero-location{
+          display:inline-flex;align-items:center;gap:.5rem;
+          background:rgba(0,255,136,.07);border:1px solid rgba(0,255,136,.2);
+          color:var(--green);font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;
+          padding:.35rem .9rem;border-radius:3px;margin-bottom:1.6rem;
+          animation:fadeUp .5s ease both;
+        }
+        .hero h1{
+          font-family:var(--hd);font-weight:900;
+          font-size:clamp(2.2rem,5vw,4rem);
+          line-height:1.1;letter-spacing:.01em;
+          animation:fadeUp .5s .1s ease both;
+        }
+        .hero h1 .c1{color:var(--cyan)}
+        .hero h1 .c2{color:var(--orange)}
+        .hero-sub{
+          margin-top:1.2rem;color:var(--muted2);
+          font-size:1.05rem;max-width:600px;
+          animation:fadeUp .5s .2s ease both;
+        }
+        .hero-chips{
+          display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem;
+          animation:fadeUp .5s .3s ease both;
+        }
+        .chip{
+          background:rgba(0,212,255,.07);border:1px solid rgba(0,212,255,.18);
+          color:var(--cyan);font-size:.72rem;font-weight:600;letter-spacing:.07em;
+          padding:.3rem .8rem;border-radius:20px;
+        }
+        .chip.orange{background:rgba(255,123,0,.07);border-color:rgba(255,123,0,.22);color:var(--orange)}
+        .chip.green{background:rgba(0,255,136,.07);border-color:rgba(0,255,136,.22);color:var(--green)}
+        .hero-btns{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem;animation:fadeUp .5s .35s ease both}
+        .btn-p{
+          background:var(--cyan);color:var(--bg);
+          font-family:var(--hd);font-weight:700;font-size:.82rem;letter-spacing:.08em;
+          padding:.85rem 2rem;border:none;border-radius:5px;cursor:pointer;
+          text-decoration:none;transition:transform .2s,box-shadow .2s;
+        }
+        .btn-p:hover{transform:translateY(-3px);box-shadow:0 10px 35px rgba(0,212,255,.35)}
+        .btn-g{
+          background:transparent;color:var(--text);
+          font-family:var(--hd);font-weight:600;font-size:.82rem;letter-spacing:.08em;
+          padding:.85rem 2rem;border:1px solid var(--border2);border-radius:5px;
+          cursor:pointer;text-decoration:none;transition:border-color .2s,color .2s;
+        }
+        .btn-g:hover{border-color:var(--cyan);color:var(--cyan)}
+
+        /* TRUST BAR */
+        .trust-bar{
+          background:var(--panel);
+          border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+          padding:0 4vw;
+          display:flex;align-items:center;gap:2rem;overflow-x:auto;
+          scrollbar-width:none;
+        }
+        .trust-bar::-webkit-scrollbar{display:none}
+        .trust-item{
+          flex-shrink:0;display:flex;align-items:center;gap:.6rem;
+          padding:1.2rem 0;
+          font-size:.82rem;font-weight:600;color:var(--muted2);letter-spacing:.04em;
+          white-space:nowrap;
+        }
+        .trust-item .dot{width:6px;height:6px;border-radius:50%;background:var(--cyan);flex-shrink:0}
+        .trust-sep{width:1px;height:28px;background:var(--border);flex-shrink:0}
+
+        /* SECTIONS */
+        section{padding:5.5rem 4vw;position:relative;z-index:1}
+        .s-tag{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;color:var(--cyan);margin-bottom:.5rem}
+        h2{font-family:var(--hd);font-weight:900;font-size:clamp(1.7rem,3vw,2.5rem);letter-spacing:.02em;margin-bottom:.8rem}
+        .s-sub{color:var(--muted2);max-width:580px;font-size:.98rem}
+
+        /* SERVICES GRID */
+        .services-bg{background:var(--deep)}
+        .srv-grid{
+          display:grid;
+          grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+          gap:1.3rem;margin-top:2.8rem;
+        }
+        .srv{
+          background:var(--card);border:1px solid var(--border);
+          border-radius:10px;padding:1.8rem 1.6rem;
+          position:relative;overflow:hidden;
+          transition:transform .3s,border-color .3s,box-shadow .3s;
+          cursor:default;
+        }
+        .srv::after{
+          content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+          background:linear-gradient(90deg,var(--cyan),var(--orange));
+          transform:scaleX(0);transform-origin:left;transition:transform .4s;
+        }
+        .srv:hover::after{transform:scaleX(1)}
+        .srv:hover{transform:translateY(-5px);border-color:rgba(0,212,255,.35);box-shadow:0 16px 50px rgba(0,0,0,.4)}
+        .srv-head{display:flex;align-items:center;gap:.9rem;margin-bottom:1rem}
+        .srv-ic{
+          width:48px;height:48px;border-radius:10px;
+          display:flex;align-items:center;justify-content:center;font-size:1.5rem;
+          background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.15);flex-shrink:0;
+        }
+        .srv-ic.o{background:rgba(255,123,0,.08);border-color:rgba(255,123,0,.15)}
+        .srv-ic.g{background:rgba(0,255,136,.08);border-color:rgba(0,255,136,.15)}
+        .srv-ic.r{background:rgba(255,59,92,.08);border-color:rgba(255,59,92,.15)}
+        .srv-title{font-family:var(--hd);font-weight:700;font-size:.98rem;letter-spacing:.04em}
+        .srv-cat{font-family:var(--mono);font-size:.62rem;color:var(--muted);letter-spacing:.1em;margin-top:.15rem}
+        .srv p{color:var(--muted2);font-size:.88rem;line-height:1.6}
+        .srv-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+        .s-tag-item{
+          font-size:.65rem;font-weight:600;letter-spacing:.07em;
+          padding:.2rem .55rem;border-radius:3px;
+          background:rgba(0,212,255,.07);color:var(--cyan);border:1px solid rgba(0,212,255,.12);
+        }
+        .s-tag-item.o{background:rgba(255,123,0,.07);color:var(--orange);border-color:rgba(255,123,0,.12)}
+
+        /* NAIROBI SECTION */
+        .nairobi-sec{background:var(--bg)}
+        .nairobi-inner{
+          display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;
+          margin-top:2.5rem;
+        }
+        .nairobi-map{
+          background:var(--card);border:1px solid var(--border);
+          border-radius:12px;overflow:hidden;height:340px;position:relative;
+          display:flex;align-items:center;justify-content:center;
+        }
+        .map-placeholder{text-align:center}
+        .map-placeholder .pin{font-size:3rem;display:block;margin-bottom:.5rem;animation:bounce 2s infinite}
+        .map-placeholder h3{font-family:var(--hd);color:var(--cyan);font-size:1.1rem;margin-bottom:.3rem}
+        .map-placeholder p{color:var(--muted);font-size:.85rem}
+        .map-btn{
+          display:inline-block;margin-top:1rem;
+          background:var(--cyan);color:var(--bg);
+          font-family:var(--hd);font-weight:700;font-size:.75rem;letter-spacing:.08em;
+          padding:.6rem 1.3rem;border-radius:4px;text-decoration:none;
+        }
+        .nairobi-text .point{
+          display:flex;gap:1rem;align-items:flex-start;
+          margin-bottom:1.2rem;padding:1rem 1.2rem;
+          background:var(--card);border:1px solid var(--border);border-radius:8px;
+        }
+        .point-ic{font-size:1.4rem;flex-shrink:0;margin-top:.1rem}
+        .point-title{font-weight:700;font-size:.92rem;margin-bottom:.2rem}
+        .point-desc{color:var(--muted2);font-size:.84rem}
+
+        /* PORTFOLIO / VIDEOS */
+        .portfolio-sec{background:var(--panel)}
+        .portfolio-grid{
+          display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+          gap:1.3rem;margin-top:2.8rem;
+        }
+        .port-card{
+          background:var(--card2);border:1px solid var(--border);
+          border-radius:10px;overflow:hidden;
+          transition:transform .3s,box-shadow .3s;
+        }
+        .port-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(0,0,0,.5)}
+        .port-thumb{
+          height:160px;background:var(--deep);
+          display:flex;align-items:center;justify-content:center;
+          font-size:3rem;border-bottom:1px solid var(--border);
+          position:relative;overflow:hidden;
+        }
+        .port-thumb .overlay{
+          position:absolute;inset:0;background:rgba(0,212,255,.05);
+          display:flex;align-items:center;justify-content:center;
+        }
+        .play-btn{
+          width:52px;height:52px;background:rgba(0,212,255,.15);
+          border:2px solid var(--cyan);border-radius:50%;
+          display:flex;align-items:center;justify-content:center;
+          font-size:1.1rem;cursor:pointer;transition:background .2s;
+        }
+        .play-btn:hover{background:rgba(0,212,255,.3)}
+        .port-body{padding:1.2rem}
+        .port-type{font-family:var(--mono);font-size:.62rem;color:var(--orange);letter-spacing:.1em;margin-bottom:.4rem}
+        .port-title{font-weight:700;font-size:.95rem;margin-bottom:.4rem}
+        .port-desc{color:var(--muted2);font-size:.83rem}
+
+        /* SKILLS / TOOLS */
+        .skills-sec{background:var(--bg)}
+        .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:2.5rem}
+        .skill-pill{
+          background:var(--card);border:1px solid var(--border);border-radius:8px;
+          padding:1.2rem 1rem;text-align:center;
+          transition:border-color .3s,transform .3s;
+        }
+        .skill-pill:hover{border-color:var(--cyan);transform:translateY(-3px)}
+        .skill-pill .sk-ic{font-size:1.8rem;margin-bottom:.5rem;display:block}
+        .skill-pill .sk-name{font-weight:700;font-size:.83rem;margin-bottom:.2rem}
+        .skill-pill .sk-level{
+          font-family:var(--mono);font-size:.6rem;color:var(--muted);letter-spacing:.08em;
+        }
+        .sk-bar{height:3px;background:var(--border);border-radius:2px;margin-top:.7rem;overflow:hidden}
+        .sk-fill{height:100%;background:linear-gradient(90deg,var(--cyan),var(--green));border-radius:2px}
+
+        /* PRICING */
+        .pricing-sec{background:var(--deep)}
+        .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.3rem;margin-top:2.8rem}
+        .price-card{
+          background:var(--card);border:1px solid var(--border);
+          border-radius:10px;padding:2rem 1.6rem;
+          transition:transform .3s,border-color .3s;
+        }
+        .price-card.featured{
+          border-color:var(--cyan);
+          background:linear-gradient(160deg,#0d1e30,#0f2438);
+          transform:scale(1.03);
+        }
+        .price-card:hover{transform:scale(1.03);border-color:var(--border2)}
+        .price-card.featured:hover{transform:scale(1.05)}
+        .pc-badge{
+          font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;
+          color:var(--bg);background:var(--cyan);
+          padding:.2rem .7rem;border-radius:2px;display:inline-block;margin-bottom:1rem;
+        }
+        .pc-name{font-family:var(--hd);font-weight:700;font-size:1rem;margin-bottom:.5rem}
+        .pc-price{font-family:var(--hd);font-size:2rem;font-weight:900;color:var(--cyan);margin-bottom:.3rem}
+        .pc-price span{font-size:.9rem;color:var(--muted);font-weight:400}
+        .pc-desc{color:var(--muted2);font-size:.83rem;margin-bottom:1.2rem}
+        .pc-list{list-style:none}
+        .pc-list li{
+          display:flex;align-items:center;gap:.6rem;
+          font-size:.85rem;padding:.35rem 0;
+          border-bottom:1px solid var(--border);color:var(--muted2);
+        }
+        .pc-list li:last-child{border:none}
+        .pc-list li::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0}
+        .pc-btn{
+          width:100%;margin-top:1.5rem;
+          background:var(--cyan);color:var(--bg);
+          font-family:var(--hd);font-weight:700;font-size:.8rem;letter-spacing:.08em;
+          padding:.85rem;border:none;border-radius:5px;cursor:pointer;
+          transition:opacity .2s;
+        }
+        .pc-btn:hover{opacity:.85}
+        .pc-btn.ghost{background:transparent;border:1px solid var(--border2);color:var(--text)}
+        .pc-btn.ghost:hover{border-color:var(--cyan);color:var(--cyan)}
+
+        /* CONTACT */
+        .contact-sec{background:var(--bg)}
+        .contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:3.5rem;margin-top:2.8rem}
+        .ci-block{display:flex;align-items:flex-start;gap:.9rem;margin-bottom:1.3rem}
+        .ci-ic{
+          width:44px;height:44px;flex-shrink:0;
+          background:rgba(0,212,255,.07);border:1px solid rgba(0,212,255,.18);
+          border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;
+        }
+        .ci-label{font-family:var(--mono);font-size:.62rem;color:var(--muted);letter-spacing:.1em;margin-bottom:.2rem}
+        .ci-val{font-weight:600;font-size:.92rem}
+        .socials{display:flex;gap:.8rem;margin-top:1.5rem}
+        .social-btn{
+          width:42px;height:42px;border-radius:8px;
+          background:rgba(255,255,255,.04);border:1px solid var(--border);
+          display:flex;align-items:center;justify-content:center;
+          font-size:1.1rem;cursor:pointer;text-decoration:none;
+          transition:border-color .2s,background .2s;
+        }
+        .social-btn:hover{border-color:var(--cyan);background:rgba(0,212,255,.08)}
+
+        /* FORM */
+        .cf{display:flex;flex-direction:column;gap:.9rem}
+        .cf-row{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+        .cf label{display:block;font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;color:var(--muted);margin-bottom:.4rem}
+        .cf input,.cf textarea,.cf select{
+          width:100%;background:var(--card);border:1px solid var(--border);
+          color:var(--text);font-family:var(--body);font-size:.9rem;
+          padding:.75rem 1rem;border-radius:6px;outline:none;
+          transition:border-color .25s;
+        }
+        .cf input:focus,.cf textarea:focus,.cf select:focus{border-color:var(--cyan)}
+        .cf textarea{min-height:120px;resize:vertical}
+        .cf select option{background:var(--card)}
+        .cf-submit{
+          background:linear-gradient(135deg,var(--cyan),#0088aa);
+          color:var(--bg);font-family:var(--hd);font-weight:700;
+          font-size:.85rem;letter-spacing:.1em;
+          padding:1rem;border:none;border-radius:6px;cursor:pointer;
+          transition:transform .2s,box-shadow .2s;
+        }
+        .cf-submit:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,212,255,.3)}
+
+        /* WHATSAPP FLOAT */
+        .wa-float{
+          position:fixed;bottom:1.8rem;right:1.8rem;
+          background:linear-gradient(135deg,#25d366,#128c7e);
+          width:58px;height:58px;border-radius:50%;
+          display:flex;align-items:center;justify-content:center;
+          font-size:1.6rem;cursor:pointer;text-decoration:none;
+          box-shadow:0 6px 24px rgba(37,211,102,.4);
+          z-index:999;transition:transform .2s,box-shadow .2s;
+          animation:pulse-green 2.5s infinite;
+        }
+        .wa-float:hover{transform:scale(1.1);box-shadow:0 10px 35px rgba(37,211,102,.55)}
+
+        /* FOOTER */
+        footer{background:var(--panel);border-top:1px solid var(--border);padding:3rem 4vw 1.5rem;z-index:1;position:relative}
+        .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+        .footer-brand p{color:var(--muted);font-size:.85rem;margin-top:.7rem;max-width:280px}
+        .footer-col h4{font-family:var(--mono);font-size:.65rem;letter-spacing:.12em;color:var(--cyan);margin-bottom:.8rem}
+        .footer-col ul{list-style:none}
+        .footer-col li{margin-bottom:.45rem}
+        .footer-col a{color:var(--muted);text-decoration:none;font-size:.85rem;transition:color .2s}
+        .footer-col a:hover{color:var(--text)}
+        .footer-btm{
+          border-top:1px solid var(--border);padding-top:1.2rem;
+          display:flex;justify-content:space-between;align-items:center;
+          color:var(--muted);font-size:.78rem;
+        }
+
+        /* ANIMATE */
+        @keyframes fadeUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+        @keyframes pulse-green{0%,100%{box-shadow:0 6px 24px rgba(37,211,102,.4)}50%{box-shadow:0 6px 34px rgba(37,211,102,.7)}}
+        .reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
+        .reveal.in{opacity:1;transform:translateY(0)}
+
+        /* RESPONSIVE */
+        @media(max-width:900px){
+          .nairobi-inner,.contact-grid{grid-template-columns:1fr}
+          .footer-grid{grid-template-columns:1fr 1fr}
+          .price-card.featured{transform:none}
+        }
+        @media(max-width:640px){
+          .nav-links,.nav-wa{display:none}
+          .hamburger{display:flex}
+          .hero h1{font-size:2rem}
+          .cf-row{grid-template-columns:1fr}
+          .footer-grid{grid-template-columns:1fr}
+          .trust-bar{gap:1rem}
+          .footer-btm{flex-direction:column;gap:.5rem;text-align:center}
+        }
+    </style>
+</head>
+<body>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa-float" href="https://wa.me/254769871712?text=Hi%20Electrofix%20Hub!%20I%20need%20your%20services." target="_blank" title="Chat on WhatsApp">💬</a>
+
+<!-- NAV -->
+<nav>
+    <a class="logo" href="#home">
+        <span><span class="e">ELECTRO</span><span class="f">FIX</span> HUB</span>
+        <span class="tag">NAIROBI</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#nairobi">Location</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-wa" href="https://wa.me/254700000000" target="_blank">📲 WhatsApp Us</a>
+    <div class="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+    <a href="#services" onclick="closeMob()">Services</a>
+    <a href="#portfolio" onclick="closeMob()">Portfolio</a>
+    <a href="#nairobi" onclick="closeMob()">Our Location</a>
+    <a href="#pricing" onclick="closeMob()">Pricing</a>
+    <a href="#contact" onclick="closeMob()">Contact / Book</a>
+    <a href="https://wa.me/254700000000" target="_blank" style="color:#25d366">💬 WhatsApp Now</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-inner">
+        <div class="hero-location">📍 NAIROBI CBD, KENYA — AVAILABLE CITYWIDE</div>
+        <h1>
+            <span class="c1">Electronics</span>, Electrical<br>
+            &amp; <span class="c2">Tech Solutions</span><br>
+            All In One Place
+        </h1>
+        <p class="hero-sub">
+            From phone repairs and FRP bypass to 3-phase wiring, solar systems, AutoCAD designs, and web development — Electrofix Hub delivers expert solutions across Nairobi.
+        </p>
+        <div class="hero-chips">
+            <span class="chip">📱 Phone Repair</span>
+            <span class="chip">🔓 FRP Bypass</span>
+            <span class="chip orange">⚡ 3-Phase Wiring</span>
+            <span class="chip green">☀️ Solar Systems</span>
+            <span class="chip">📐 AutoCAD</span>
+            <span class="chip orange">🛒 Electronics Broker</span>
+            <span class="chip green">🌐 Web & Apps</span>
+            <span class="chip">🔧 Installations</span>
+        </div>
+        <div class="hero-btns">
+            <a class="btn-p" href="#contact">Book a Service</a>
+            <a class="btn-g" href="#services">View All Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+    <div class="trust-item"><span class="dot"></span>Certified Electrician</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><span class="dot"></span>FRP / Unlock Specialist</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><span class="dot"></span>Solar Expert</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><span class="dot"></span>AutoCAD Designer</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><span class="dot"></span>Motor Control Wiring</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><span class="dot"></span>Web & App Developer</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><span class="dot"></span>Nairobi CBD Broker</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><span class="dot"></span>Same-Day Response</div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-bg" id="services">
+    <div class="s-tag">// WHAT WE OFFER</div>
+    <h2>Our Expert Services</h2>
+    <p class="s-sub">End-to-end electronics and electrical solutions for individuals, businesses, and buildings across Nairobi.</p>
+    <div class="srv-grid">
+
+        <div class="srv reveal">
+            <div class="srv-head">
+                <div class="srv-ic">📱</div>
+                <div><div class="srv-title">Phone Repair</div><div class="srv-cat">ELECTRONICS REPAIR</div></div>
+            </div>
+            <p>Screen replacements, battery swaps, charging ports, motherboard repairs, and water damage recovery for all Android and iPhone models.</p>
+            <div class="srv-tags">
+                <span class="s-tag-item">Android</span>
+                <span class="s-tag-item">iPhone</span>
+                <span class="s-tag-item">Same-Day</span>
+                <span class="s-tag-item">90-Day Warranty</span>
+            </div>
+        </div>
+
+        <div class="srv reveal">
+            <div class="srv-head">
+                <div class="srv-ic">🔓</div>
+                <div><div class="srv-title">FRP Bypass & Unlocking</div><div class="srv-cat">ANDROID SPECIALIST</div></div>
+            </div>
+            <p>Professional FRP (Factory Reset Protection) bypass for all Android devices including Samsung, Tecno, Itel, Infinix, Huawei and more. IMEI unlocking available.</p>
+            <div class="srv-tags">
+                <span class="s-tag-item">FRP Bypass</span>
+                <span class="s-tag-item">IMEI Unlock</span>
+                <span class="s-tag-item">All Brands</span>
+                <span class="s-tag-item o">Remote Option</span>
+            </div>
+        </div>
+
+        <div class="srv reveal">
+            <div class="srv-head">
+                <div class="srv-ic o">🛒</div>
+                <div><div class="srv-title">Electronics Brokerage</div><div class="srv-cat">NAIROBI CBD</div></div>
+            </div>
+            <p>Looking for electronics in Nairobi CBD? I connect buyers to the best suppliers — phones, laptops, components, and accessories at the best market prices.</p>
+            <div class="srv-tags">
+                <span class="s-tag-item o">Bulk Orders</span>
+                <span class="s-tag-item o">Best Price</span>
+                <span class="s-tag-item o">Verified Suppliers</span>
+            </div>
+        </div>
+
+        <div class="srv reveal">
+            <div class="srv-head">
+                <div class="srv-ic">📐</div>
+                <div><div class="srv-title">AutoCAD Drafting</div><div class="srv-cat">DESIGN & ENGINEERING</div></div>
+            </div>
+            <p>Structural drawings, electrical layout plans, floor plans, and architectural designs. Precise CAD drafting for residential and commercial projects.</p>
+            <div class="srv-tags">
+                <span class="s-tag-item">AutoCAD</span>
+                <span class="s-tag-item">Structural</span>
+                <span class="s-tag-item">Electrical Plans</span>
+                <span class="s-tag-item">Floor Plans</span>
+            </div>
+        </div>
+
+        <div class="srv reveal">
+            <div class="srv-head">
+                <div class="srv-ic g">⚡</div>
+                <div><div class="srv-title">Electrical Wiring</div><div class="srv-cat">1-PHASE & 3-PHASE</div></div>
+            </div>
+            <p>Complete building wiring — residential and commercial. Single-phase and 3-phase power systems, distribution boards, circuit breakers, and compliance with Kenya Power standards.</p>
+            <div class="srv-tags">
+                <span class="s-tag-item" style="color:var(--green);border-color:rgba(0,255,136,.2);background:rgba(0,255,136,.07)">3-Phase</span>
+                <span class="s-tag-item" style="color:var(--green);border-color:rgba(0,255,136,.2);background:rgba(0,255,136,.07)">DB Installation</span>
+                <span class="s-tag-item" style="color:var(--green);border-color:rgba(0,255,136,.2);background:rgba(0,255,136,.07)">Compliant</span>
+            </div>
+        </div>
+
+        <div class="srv reveal">
+            <div class="srv-head">
+                <div class="srv-ic g">🔄</div>
+                <div><div class="srv-title">Motor Contactor Control</div><div class="srv-cat">INDUSTRIAL 3-PHASE</div></div>
+            </div>
+            <p>Star-delta starters, DOL starters, motor contactor panels, control circuits for industrial machinery. Video demonstrations available on request.</p>
+            <div class="srv-tags">
+                <span class="s-tag-item" style="color:var(--green);border-color:rgba(0,255,136,.2);background:rgba(0,255,136,.07)">Star-Delta</span>
+                <span class="s-tag-item" style="color:var(--green);border-color:rgba(0,255,136,.2);background:rgba(0,255,136,.07)">DOL Starter</span>
+                <span class="s-tag-item" style="color:var(--green);border-color:rgba(0,255,136,.2);background:rgba(0,255,136,.07)">Video Proof</span>
+            </div>
+        </div>
+
+        <div class="srv reveal">
+            <div class="srv-head">
+                <div class="srv-ic o">☀️</div>
+                <div><div class="srv-title">Solar Systems</div><div class="srv-cat">INSTALLATION & MAINTENANCE</div></div>
+            </div>
+            <p>Quality solar panel installation, inverter setup, battery bank configuration, and ongoing maintenance for homes, offices, and off-grid properties across Kenya.</p>
+            <div class="srv-tags">
+                <span class="s-tag-item o">On-Grid</span>
+                <span class="s-tag-item o">Off-Grid</span>
+                <span class="s-tag-item o">Hybrid</span>
+                <span class="s-tag-item o">Maintenance</span>
+            </div>
+        </div>
+
+        <div class="srv reveal">
+            <div class="srv-head">
+                <div class="srv-ic">🏢</div>
+                <div><div class="srv-title">Building Installations</div><div class="srv-cat">FITTINGS & APPLIANCES</div></div>
+            </div>
+            <p>Full electrical and electronics fittings for Molson House and other buildings — lighting, sockets, CCTV, intercoms, alarm systems, and appliance installation.</p>
+            <div class="srv-tags">
+                <span class="s-tag-item">CCTV</span>
+                <span class="s-tag-item">Lighting</span>
+                <span class="s-tag-item">Intercoms</span>
+                <span class="s-tag-item">Alarms</span>
+            </div>
+        </div>
+
+        <div class="srv reveal">
+            <div class="srv-head">
+                <div class="srv-ic">🔧</div>
+                <div><div class="srv-title">Piping Services</div><div class="srv-cat">PLUMBING & CONDUIT</div></div>
+            </div>
+            <p>Electrical conduit routing, pipe laying for cable management, and plumbing piping services for new builds and renovations.</p>
+            <div class="srv-tags">
+                <span class="s-tag-item">Conduit</span>
+                <span class="s-tag-item">Cable Trunking</span>
+                <span class="s-tag-item">Piping</span>
+            </div>
+        </div>
+
+        <div class="srv reveal">
+            <div class="srv-head">
+                <div class="srv-ic o">🌐</div>
+                <div><div class="srv-title">Web & App Development</div><div class="srv-cat">DIGITAL SOLUTIONS</div></div>
+            </div>
+            <p>Custom websites, business landing pages, and mobile apps for businesses, shops, and service providers. SEO-ready, mobile-first design.</p>
+            <div class="srv-tags">
+                <span class="s-tag-item o">Websites</span>
+                <span class="s-tag-item o">Mobile Apps</span>
+                <span class="s-tag-item o">SEO</span>
+                <span class="s-tag-item o">E-Commerce</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- NAIROBI LOCATION -->
+<section class="nairobi-sec" id="nairobi">
+    <div class="s-tag">// WHERE TO FIND US</div>
+    <h2>Based in Nairobi CBD</h2>
+    <p class="s-sub">Serving clients across Nairobi and Kenya. Walk-in welcome or book a site visit.</p>
+    <div class="nairobi-inner">
+        <div class="nairobi-map reveal">
+            <div class="map-placeholder">
+                <span class="pin">📍</span>
+                <h3>Nairobi CBD, Kenya</h3>
+                <p>Molson House & surrounds</p>
+                <a class="map-btn" href="https://maps.google.com/?q=Nairobi+CBD+Kenya" target="_blank">Open in Google Maps →</a>
+            </div>
+        </div>
+        <div class="nairobi-text reveal">
+            <div class="point">
+                <span class="point-ic">📍</span>
+                <div>
+                    <div class="point-title">Physical Location</div>
+                    <div class="point-desc">Nairobi CBD, Near Molson House — exact address provided on booking confirmation.</div>
+                </div>
+            </div>
+            <div class="point">
+                <span class="point-ic">🚗</span>
+                <div>
+                    <div class="point-title">Mobile / Callout Service</div>
+                    <div class="point-desc">We travel to your home, office, or building site across Nairobi. Call or WhatsApp to arrange.</div>
+                </div>
+            </div>
+            <div class="point">
+                <span class="point-ic">⏰</span>
+                <div>
+                    <div class="point-title">Working Hours</div>
+                    <div class="point-desc">Mon – Sat: 7:30 AM – 7:00 PM. Emergency callouts negotiable.</div>
+                </div>
+            </div>
+            <div class="point">
+                <span class="point-ic">📲</span>
+                <div>
+                    <div class="point-title">Fastest Response: WhatsApp</div>
+                    <div class="point-desc">Message us on WhatsApp for same-day response and booking confirmation.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio-sec" id="portfolio">
+    <div class="s-tag">// PROOF OF WORK</div>
+    <h2>Portfolio & Video Demos</h2>
+    <p class="s-sub">Real work. Real results. Watch our videos and project showcases below.</p>
+    <div class="portfolio-grid">
+        <div class="port-card reveal">
+            <div class="port-thumb" style="background:linear-gradient(135deg,#0d1f10,#0b1a0d)">
+                <span style="font-size:3rem">⚡</span>
+                <div class="overlay"><div class="play-btn" onclick="alert('Upload your 3-phase contactor video here!')">▶️</div></div>
+            </div>
+            <div class="port-body">
+                <div class="port-type">VIDEO DEMO // ELECTRICAL</div>
+                <div class="port-title">3-Phase Motor Contactor Control</div>
+                <div class="port-desc">Star-delta motor starter wiring and commissioning. Full control panel build from scratch.</div>
+            </div>
+        </div>
+        <div class="port-card reveal">
+            <div class="port-thumb" style="background:linear-gradient(135deg,#1a1000,#1a0c00)">
+                <span style="font-size:3rem">☀️</span>
+                <div class="overlay"><div class="play-btn" onclick="alert('Upload your solar installation video here!')">▶️</div></div>
+            </div>
+            <div class="port-body">
+                <div class="port-type">VIDEO DEMO // SOLAR</div>
+                <div class="port-title">Solar System Installation</div>
+                <div class="port-desc">Complete off-grid solar setup including panel mounting, inverter wiring and battery bank config.</div>
+            </div>
+        </div>
+        <div class="port-card reveal">
+            <div class="port-thumb" style="background:linear-gradient(135deg,#001020,#001428)">
+                <span style="font-size:3rem">📐</span>
+                <div class="overlay"><div class="play-btn" onclick="alert('Upload your AutoCAD project image here!')">▶️</div></div>
+            </div>
+            <div class="port-body">
+                <div class="port-type">PROJECT // AUTOCAD</div>
+                <div class="port-title">Electrical Layout Drawing</div>
+                <div class="port-desc">AutoCAD electrical plan for a commercial building — circuit routing, DB placement, load calculations.</div>
+            </div>
+        </div>
+        <div class="port-card reveal">
+            <div class="port-thumb" style="background:linear-gradient(135deg,#0e0020,#100025)">
+                <span style="font-size:3rem">📱</span>
+                <div class="overlay"><div class="play-btn" onclick="alert('Upload your FRP bypass demo video here!')">▶️</div></div>
+            </div>
+            <div class="port-body">
+                <div class="port-type">VIDEO DEMO // PHONE TECH</div>
+                <div class="port-title">Android FRP Bypass</div>
+                <div class="port-desc">Live demonstration of FRP bypass on Samsung and Tecno devices using professional tools.</div>
+            </div>
+        </div>
+        <div class="port-card reveal">
+            <div class="port-thumb" style="background:linear-gradient(135deg,#001510,#001a12)">
+                <span style="font-size:3rem">🏢</span>
+                <div class="overlay"><div class="play-btn" onclick="alert('Upload your building installation photos here!')">▶️</div></div>
+            </div>
+            <div class="port-body">
+                <div class="port-type">PROJECT // INSTALLATIONS</div>
+                <div class="port-title">Molson House Fittings</div>
+                <div class="port-desc">Full electrical fittings, lighting, and appliance installation for a multi-floor residential building.</div>
+            </div>
+        </div>
+        <div class="port-card reveal">
+            <div class="port-thumb" style="background:linear-gradient(135deg,#001428,#001530)">
+                <span style="font-size:3rem">🌐</span>
+                <div class="overlay"><div class="play-btn" onclick="alert('Add your website project link here!')">▶️</div></div>
+            </div>
+            <div class="port-body">
+                <div class="port-type">PROJECT // WEB DEV</div>
+                <div class="port-title">Business Website Build</div>
+                <div class="port-desc">Custom responsive website for a Nairobi-based electronics retailer. SEO-optimized and mobile-first.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-sec" id="skills">
+    <div class="s-tag">// TOOLS & TECHNOLOGIES</div>
+    <h2>Skills & Expertise</h2>
+    <p class="s-sub">A multi-disciplinary skill set built from real hands-on experience.</p>
+    <div class="skills-grid">
+        <div class="skill-pill reveal"><span class="sk-ic">📱</span><div class="sk-name">Phone Repair</div><div class="sk-level">EXPERT</div><div class="sk-bar"><div class="sk-fill" style="width:96%"></div></div></div>
+        <div class="skill-pill reveal"><span class="sk-ic">🔓</span><div class="sk-name">FRP / Unlock</div><div class="sk-level">EXPERT</div><div class="sk-bar"><div class="sk-fill" style="width:95%"></div></div></div>
+        <div class="skill-pill reveal"><span class="sk-ic">⚡</span><div class="sk-name">3-Phase Wiring</div><div class="sk-level">ADVANCED</div><div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div></div>
+        <div class="skill-pill reveal"><span class="sk-ic">🔄</span><div class="sk-name">Motor Contactors</div><div class="sk-level">ADVANCED</div><div class="sk-bar"><div class="sk-fill" style="width:88%"></div></div></div>
+        <div class="skill-pill reveal"><span class="sk-ic">☀️</span><div class="sk-name">Solar Systems</div><div class="sk-level">ADVANCED</div><div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div></div>
+        <div class="skill-pill reveal"><span class="sk-ic">📐</span><div class="sk-name">AutoCAD</div><div class="sk-level">PROFICIENT</div><div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div></div>
+        <div class="skill-pill reveal"><span class="sk-ic">🌐</span><div class="sk-name">Web Dev</div><div class="sk-level">ADVANCED</div><div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div></div>
+        <div class="skill-pill reveal"><span class="sk-ic">📲</span><div class="sk-name">App Dev</div><div class="sk-level">PROFICIENT</div><div class="sk-bar"><div class="sk-fill" style="width:75%"></div></div></div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-sec" id="pricing">
+    <div class="s-tag">// TRANSPARENT PRICING</div>
+    <h2>Service Packages</h2>
+    <p class="s-sub">Fair and transparent pricing for every service. Custom quotes available for large projects.</p>
+    <div class="pricing-grid">
+        <div class="price-card reveal">
+            <div class="pc-name">Phone Repair</div>
+            <div class="pc-price">From KSh 500<span> / repair</span></div>
+            <div class="pc-desc">Screen, battery, charging port, water damage</div>
+            <ul class="pc-list">
+                <li>All Android & iPhone brands</li>
+                <li>Genuine parts used</li>
+                <li>90-day warranty</li>
+                <li>Same-day service available</li>
+                <li>FRP bypass included if needed</li>
+            </ul>
+            <button class="pc-btn ghost" onclick="scrollToContact()">BOOK REPAIR</button>
+        </div>
+        <div class="price-card featured reveal">
+            <div class="pc-badge">MOST POPULAR</div>
+            <div class="pc-name">Electrical & Solar</div>
+            <div class="pc-price">Custom<span> / project</span></div>
+            <div class="pc-desc">Wiring, solar installs, motor control, DB boards</div>
+            <ul class="pc-list">
+                <li>Single & 3-phase wiring</li>
+                <li>Solar system design & install</li>
+                <li>Motor contactor panels</li>
+                <li>AutoCAD drawings included</li>
+                <li>Kenya Power compliant</li>
+                <li>Site survey free in Nairobi</li>
+            </ul>
+            <button class="pc-btn" onclick="scrollToContact()">GET FREE QUOTE</button>
+        </div>
+        <div class="price-card reveal">
+            <div class="pc-name">Web & App Dev</div>
+            <div class="pc-price">From KSh 8,000<span> / site</span></div>
+            <div class="pc-desc">Websites, landing pages, mobile apps</div>
+            <ul class="pc-list">
+                <li>Mobile-first responsive design</li>
+                <li>SEO optimised</li>
+                <li>Google indexing setup</li>
+                <li>Domain & hosting guidance</li>
+                <li>Social media integration</li>
+            </ul>
+            <button class="pc-btn ghost" onclick="scrollToContact()">START PROJECT</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-sec" id="contact">
+    <div class="s-tag">// REACH OUT</div>
+    <h2>Book a Service</h2>
+    <p class="s-sub">Fill the form, or reach out directly on WhatsApp for the fastest response.</p>
+    <div class="contact-grid">
+        <div class="reveal">
+            <div class="ci-block">
+                <div class="ci-ic">📞</div>
+                <div><div class="ci-label">PHONE / WHATSAPP</div><div class="ci-val">+254 700 000 000</div></div>
+            </div>
+            <div class="ci-block">
+                <div class="ci-ic">✉️</div>
+                <div><div class="ci-label">EMAIL</div><div class="ci-val">info@electrofixhub.com</div></div>
+            </div>
+            <div class="ci-block">
+                <div class="ci-ic">📍</div>
+                <div><div class="ci-label">LOCATION</div><div class="ci-val">Nairobi CBD, Kenya<br><small style="color:var(--muted);font-size:.8rem">Near Molson House · Citywide callouts available</small></div></div>
+            </div>
+            <div class="ci-block">
+                <div class="ci-ic">⏰</div>
+                <div><div class="ci-label">WORKING HOURS</div><div class="ci-val">Mon – Sat: 7:30 AM – 7:00 PM</div></div>
+            </div>
+            <div class="socials">
+                <a class="social-btn" href="#" title="Facebook">📘</a>
+                <a class="social-btn" href="#" title="Instagram">📷</a>
+                <a class="social-btn" href="#" title="YouTube">▶️</a>
+                <a class="social-btn" href="https://wa.me/254700000000" title="WhatsApp" target="_blank">💬</a>
+            </div>
+            <div style="margin-top:1.5rem;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:1.2rem">
+                <div style="font-family:var(--mono);font-size:.62rem;color:var(--cyan);letter-spacing:.1em;margin-bottom:.5rem">// QUICK WHATSAPP</div>
+                <p style="color:var(--muted2);font-size:.85rem;margin-bottom:.8rem">For the fastest response, message on WhatsApp and describe your issue.</p>
+                <a href="https://wa.me/254700000000?text=Hi%20Electrofix%20Hub!%20I%20need%20help%20with:" target="_blank"
+                   style="display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;font-weight:700;font-size:.82rem;padding:.7rem 1.3rem;border-radius:5px;text-decoration:none">
+                    💬 Open WhatsApp Chat
+                </a>
+            </div>
+        </div>
+        <div class="reveal">
+            <div class="cf">
+                <div class="cf-row">
+                    <div><label>FULL NAME</label><input type="text" placeholder="Your name"/></div>
+                    <div><label>PHONE / WHATSAPP</label><input type="tel" placeholder="+254 7XX XXX XXX"/></div>
+                </div>
+                <div><label>EMAIL (OPTIONAL)</label><input type="email" placeholder="you@example.com"/></div>
+                <div>
+                    <label>SERVICE NEEDED</label>
+                    <select>
+                        <option value="">Select a service...</option>
+                        <option>📱 Phone Repair</option>
+                        <option>🔓 FRP Bypass / Unlocking</option>
+                        <option>🛒 Electronics Brokerage (Nairobi CBD)</option>
+                        <option>📐 AutoCAD Drawing / Design</option>
+                        <option>⚡ Electrical Wiring (1-Phase)</option>
+                        <option>⚡ Electrical Wiring (3-Phase)</option>
+                        <option>🔄 Motor Contactor / Control Panel</option>
+                        <option>☀️ Solar System Installation</option>
+                        <option>☀️ Solar Maintenance</option>
+                        <option>🏢 Building Fittings & Appliances</option>
+                        <option>🔧 Piping / Conduit Works</option>
+                        <option>🌐 Website Development</option>
+                        <option>📲 Mobile App Development</option>
+                        <option>❓ Other / Not Listed</option>
+                    </select>
+                </div>
+                <div>
+                    <label>LOCATION / AREA</label>
+                    <input type="text" placeholder="e.g. Westlands, CBD, Thika Road..."/>
+                </div>
+                <div><label>DESCRIBE YOUR ISSUE OR PROJECT</label><textarea placeholder="Give as much detail as possible — device model, problem, project size, etc."></textarea></div>
+                <button class="cf-submit" onclick="handleSubmit(this)">⚡ SEND MESSAGE & BOOK SERVICE</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <div class="logo" style="font-size:1rem">
+                <span><span class="e">ELECTRO</span><span class="f">FIX</span> HUB</span>
+                <span class="tag">NAIROBI</span>
+            </div>
+            <p>Nairobi's trusted electronics and electrical expert. From your phone to your building's power system — we handle it all.</p>
+        </div>
+        <div class="footer-col">
+            <h4>SERVICES</h4>
+            <ul>
+                <li><a href="#services">Phone Repair</a></li>
+                <li><a href="#services">FRP Bypass</a></li>
+                <li><a href="#services">Electrical Wiring</a></li>
+                <li><a href="#services">Solar Systems</a></li>
+                <li><a href="#services">Motor Control</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>MORE SERVICES</h4>
+            <ul>
+                <li><a href="#services">AutoCAD Design</a></li>
+                <li><a href="#services">Electronics Broker</a></li>
+                <li><a href="#services">Building Fittings</a></li>
+                <li><a href="#services">Piping Works</a></li>
+                <li><a href="#services">Web & App Dev</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>CONTACT</h4>
+            <ul>
+                <li><a href="tel:+254769871712">📞 +254 769871712</a></li>
+                <li><a href="https://wa.me/254769871712" target="_blank">💬 WhatsApp</a></li>
+                <li><a href="mailto:sn630188@gmail.com">✉️ Email Us</a></li>
+                <li><a href="#nairobi">📍 Nairobi CBD</a></li>
+                <li><a href="#contact">📅 Book a Service</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-btm">
+        <span>©️ 2024 Electrofix Hub — Nairobi, Kenya. All rights reserved.</span>
+        <span style="color:var(--cyan)">electrofix_hub.com</span>
+    </div>
+</footer>
+
+<script>
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver(entries=>{
+      entries.forEach((e,i)=>{
+        if(e.isIntersecting){
+          setTimeout(()=>e.target.classList.add('in'), i*80);
+          obs.unobserve(e.target);
+        }
+      });
+    },{threshold:.1});
+    reveals.forEach(r=>obs.observe(r));
+
+    // Mobile nav
+    function toggleMob(){document.getElementById('mobMenu').classList.toggle('open')}
+    function closeMob(){document.getElementById('mobMenu').classList.remove('open')}
+
+    // Scroll to contact
+    function scrollToContact(){
+      document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+    }
+
+    // Form submit
+    function handleSubmit(btn){
+      const orig=btn.textContent;
+      btn.textContent='✅ MESSAGE SENT — WE\'LL CONTACT YOU SHORTLY!';
+      btn.style.background='linear-gradient(135deg,#00c851,#007a30)';
+      btn.disabled=true;
+      setTimeout(()=>{
+        btn.textContent=orig;
+        btn.style.background='';
+        btn.disabled=false;
+      },4000);
+    }
+
+    // Active nav highlight
+    const sections=document.querySelectorAll('section[id]');
+    window.addEventListener('scroll',()=>{
+      let cur='';
+      sections.forEach(s=>{if(window.scrollY>=s.offsetTop-80)cur=s.id});
+      document.querySelectorAll('.nav-links a').forEach(a=>{
+        a.style.color=a.getAttribute('href')==='#'+cur?'var(--cyan)':'';
+      });
+    });
+</script>
+</body>
+</html>
